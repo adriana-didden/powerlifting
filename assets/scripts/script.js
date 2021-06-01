@@ -1,24 +1,66 @@
-//macro script
+//start of bothCals function.
+function bothCals() {
 
-function getMacros(){
+    //this establishes the variable "gender" and where to get it from
+    var gender = find("gender").value;
 
-    var carbsHigh;
-    var carbsLow;
-    var proteinHigh;
-    var proteinLow;
-    var fatHigh; 
-    var fatLow;
+    //this states that if the user has selected female for gender that it should do this action
+    if (gender = "female") {
 
-    var weight = document.getElementById("weight");
+        //calls on the caloriesFemale function to execute
+        caloriesFemale();
 
-    function carbs(weight) {
-        carbsLow = "weight*5"
-        carbsHigh = "weight*8"
-        return "Carbs: "+ carbsLow + " - " + carbsHigh;
+        //states  that is the user chooses male as the gender to execute the following
+    } else if (gender = "male") {
+
+        //calls on the caloriesMale function 
+        caloriesMale();
     }
+}
+
+//start of the caloriesFemale function.Will determine the users maintenance calories
+function caloriesFemale() {
+
+    //calls for the weightcalc function to execute
+    weightcalc();
+
+    //implements a variable called totalCalories and states what that varible is equal to. It will get the weight value and multiply by 20
+    var totalCalories = document.getElementById("weight").value * 20;
+
+    //this will get the area in html that has this Id and then place the totalCalories into the HTML
+    document.getElementById('MyCals').innerHTML = "Cals: " + " " + totalCalories;
+
+    //runs the totalCalories value in the console
+    console.log(totalCalories);
+
+}
+//start of the caloriesMale function.Will determine the users maintenance calories
+function caloriesMale() {
+
+    //calls for the weightcalc function to execute
+    weightcalc();
+   
+    //implements a variable called totalCalories and states what that varible is equal to. It will get the weight value and multiply by 23
+    var totalCalories = document.getElementById("weight").value * 23;
+
+    //this will get the area in html that has this Id and then place the totalCalories into the HTML 
+    document.getElementById('MyCals').innerHTML = "Cals: " + " " + totalCalories;
+
+    //runs the totalCalories value in the console
+    console.log(totalCalories);
+}
+
+//start of the weightcalc function, this will get the users weight from their input and return it to the console and html
+function weightcalc() {
+
+    //establishes a variable called weight and what it equals/where to find it. weight is the value of the element in html that has the Id of weight
+    var weight = document.getElementById("weight").value;
+
+    //this will get the area in html that has this Id and then place the weight into the HTML 
+    document.getElementById('weights').innerHTML = "Weight: " + " " + weight;
+    
+    //runs the weight value in the console    
+    console.log(weight);
 
 }
 
-//macronutrient breakdown of 5-8 g per kg body weight of carbohydrates, weight * 5 or weight * 8 = total gram carb
-// 1.4-2 gram per kg body weight of protein, and                        weight * 1.4 or weight * 2 = total gram protein
-//30% of total calories from fat per day.                               weight * .30 = total gram fat
