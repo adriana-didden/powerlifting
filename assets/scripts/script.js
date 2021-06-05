@@ -38,10 +38,19 @@ function caloriesFemale() {
 
 
     //CASE 3 code section 1 start
+    //establishes info variable as the response to a prompt asking if they want more info
     var info = prompt("Want More Details?");
+
+    //states that is info is equal to yes, it'll run the next line
     if(info=="yes")
+    
+    //will add the statement to the section of html where the protein id is located
     document.getElementById('protein').innerHTML="Protein (g)=Weight lbs * .6(bare minimum) - 1(max)<br />";
+    
+    //states that is info is equal to no, it'll run the next line
     if(info=="no")
+
+    //will add the statement to the section of html where the protein id is located
     document.getElementById('protein').innerHTML="No Problem! Check out our page for any other information you might need! <br />";
     //case3 code section 1 end
 
@@ -68,11 +77,21 @@ function caloriesMale() {
     
 
 
-    //case3 code section 2 start
+ 
+    //CASE 3 code section 2 start
+    //establishes info variable as the response to a prompt asking if they want more info
     var info = prompt("Want More Details?");
+
+    //states that is info is equal to yes, it'll run the next line
     if(info=="yes")
+    
+    //will add the statement to the section of html where the protein id is located
     document.getElementById('protein').innerHTML="Protein (g)=Weight lbs * .6(bare minimum) - 1(max)<br />";
+    
+    //states that is info is equal to no, it'll run the next line
     if(info=="no")
+
+    //will add the statement to the section of html where the protein id is located
     document.getElementById('protein').innerHTML="No Problem! Check out our page for any other information you might need! <br />";
     //case3 code section 2 end
 }
