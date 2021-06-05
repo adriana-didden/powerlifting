@@ -18,6 +18,7 @@ function bothCals() {
     }
 }
 
+
 //start of the caloriesFemale function.Will determine the users maintenance calories
 function caloriesFemale() {
 
@@ -33,7 +34,22 @@ function caloriesFemale() {
     //runs the totalCalories value in the console
     console.log(totalCalories);
 
+
+
+
+    //CASE 3 code section 1 start
+    var info = prompt("Want More Details?");
+    if(info=="yes")
+    document.getElementById('protein').innerHTML="Protein (g)=Weight lbs * .6(bare minimum) - 1(max)<br />";
+    if(info=="no")
+    document.getElementById('protein').innerHTML="No Problem! Check out our page for any other information you might need! <br />";
+    //case3 code section 1 end
+
+
+
 }
+
+
 //start of the caloriesMale function.Will determine the users maintenance calories
 function caloriesMale() {
 
@@ -48,7 +64,23 @@ function caloriesMale() {
 
     //runs the totalCalories value in the console
     console.log(totalCalories);
+
+    
+
+
+    //case3 code section 2 start
+    var info = prompt("Want More Details?");
+    if(info=="yes")
+    document.getElementById('protein').innerHTML="Protein (g)=Weight lbs * .6(bare minimum) - 1(max)<br />";
+    if(info=="no")
+    document.getElementById('protein').innerHTML="No Problem! Check out our page for any other information you might need! <br />";
+    //case3 code section 2 end
 }
+
+
+
+
+
 
 //start of the weightcalc function, this will get the users weight from their input and return it to the console and html
 function weightcalc() {

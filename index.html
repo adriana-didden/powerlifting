@@ -46,21 +46,21 @@
                 <form>
                     <h4>Wanna Know Your Maintenance Calories?</h4>
                     <!--Script for this is in the script.js file which is in the assests folder-->
+                    <!--New Script in caloriesFemale() and caloriesMale();-->
                     <fieldset>
                         <legend>Info</legend>
                         <label for="weight">Weight:</label><br>
-                        <input type="number" id="weight" value="" />
+                        <input type="number" id="weight" value="" /><br>
                         <input type="radio" id="male" name="gender" value="male">
                         <label for="male">Male</label><br>
                         <input type="radio" id="female" name="gender" value="female">
                         <label for="female">Female</label><br>
 
                         <input type="button" value="Submit" onclick="bothCals()"><!--onclick will trigger the mentioned function in JS-->
-                        <p id="weights"></p>
-                        <p id="MyCals"></p>
-                        <p id="protein"></p>
                     </fieldset>
-
+                    <p id="weights"></p>
+                    <p id="MyCals"></p>
+                    <p id="protein"></p>
                 </form>
 
             </section>

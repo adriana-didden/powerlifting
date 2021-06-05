@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(163, 0, 33);
+    background-color: rgb(49, 49, 49);
     color:whitesmoke;
 }
 header{
@@ -18,23 +18,25 @@ nav ul li a{
     padding: 5px;
 }
 main{
-    background-color: rgb(65, 65, 65, .8);
+    background-color: rgba(0, 225, 255, 0.8);
     border-radius: 30px;
     padding: 5px;
-    width: min-content;
-
+    width: 80%;
+    margin:auto;
+    height:70%;
 }
 footer{
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: rgb(65, 65, 65);
     color: whitesmoke;
     text-align: center;
+    height: 40px;
 }
 img{
-    max-width: 400px;
+    max-width: 300px;
 }
 p{
     font-size: 18px;
@@ -48,7 +50,6 @@ p{
         padding: 5px;
         width: 80%;
         margin:auto;
-        height: 80%;
     }
     img{
         width: 50%;
