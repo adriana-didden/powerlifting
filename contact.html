@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--
+            GIT417/418: Case Project 4
+            Author: Adriana Didden
+            Date:June 9,2021
+        -->
+        <meta charset="UTF-8" />
+        <title>Powerlifting | Home</title>
+        <link rel="stylesheet" href="assets/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h1> Powerlifting</h1>
+            <nav>
+                <ul>
+                    <li> 
+                        <a href="index.html" >Home</a>
+                    </li>
+                    <li> 
+                        <a href="big3.html" >The Big 3 </a>
+                    </li>
+                    <li> 
+                        <a href="properform.html" >Form</a>
+                    </li>
+                    <li> 
+                        <a href="stretching.html" > Stretch</a>
+                    </li>
+                    <li> 
+                        <a href="program.html" >Program</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Contact Me For More Info</h2>
+            <section>
+                <h3>Gabriel Didden</h3> 
+                <img src="/assets/images/gabe.png" alt="" />
+                <p>Degree in Exercise Science. USPA Judge. Competing for 3 years. 
+                    <ul>Personal Best:
+                        <li>deadlift: </li>
+                        <li>Squat: </li>
+                        <li>Bench: </li>
+                    </ul>
+                <h4>Services Offered</h4>
+                <ul>
+                    <li>
+                        Monthly programming
+                    </li>
+                    <li>
+                        one on one in person sessions
+                    </li>
+                    <li>
+                        meet day handler
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Nutrition Help</h3>
+                <form action="mailto:adrianadidden@gmail.com" enctype="text/plain">
+                    <fieldset>
+                        <legend>Info</legend>
+                        <label for="firstName">First Name:</label><br>
+                        <input type="text" id="firstName" value="" /><br>
+                        <label for="lastName">Last Name:</label><br>
+                        <input type="text" id="lastName" value="" /><br>
+                        <label for="email"> Email:</label><br>
+                        <input type="email" id="email" value="" /><br>
+                        <label for="message"> Message:</label><br>
+                        <input type="text" id="message" value="" /><br>
+                       
+                        <input type="button" value="Submit" onclick="contact()"><!--onclick will trigger the mentioned function in JS-->
+                    </fieldset>`
+                    <p id="out"></p>
+                </form>
+
+            </section>
+            
+        </main>
+        <footer>
+            <p> Copyright 2021</p>
+        </footer>
+        <script src="assets\scripts\script.js"></script>
+        <script src="assets/scripts/modernizr.custom.05819.js"></script>
+
+    </body>
+</html>

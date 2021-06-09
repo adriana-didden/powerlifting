@@ -4,7 +4,7 @@
         <!--
             GIT417/418: Case Project 4
             Author: Adriana Didden
-            Date:June 8,2021
+            Date:June 9,2021
         -->
         <meta charset="UTF-8" />
         <title>Powerlifting | Home</title>
@@ -31,6 +31,9 @@
                     <li> 
                         <a href="program.html" >Program</a>
                     </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -48,11 +51,12 @@
                 <form>
                     <h4>Wanna Know Your Maintenance Calories?</h4>
                     <!--Script for this is in the script.js file which is in the assests folder-->
-                    <!--New Script in caloriesFemale() and caloriesMale();-->
+                    <!--New Script is in moreInfo();-->
                     <fieldset>
                         <legend>Info</legend>
                         <label for="weight">Weight:</label><br>
                         <input type="number" id="weight" value="" /><br>
+                        <p id=error></p>
                         <input type="radio" id="male" name="gender" value="male">
                         <label for="male">Male</label><br>
                         <input type="radio" id="female" name="gender" value="female">
@@ -62,7 +66,7 @@
                     </fieldset>
                     <p id="weights"></p>
                     <p id="MyCals"></p>
-                    <p id="protein"></p>
+                    <p id="proteinQuestion"></p>
                 </form>
 
             </section>
