@@ -48,7 +48,7 @@ function weightcalc() {//start of the weightcalc function, this will get the use
 
 function contact(){//starts the function for the contact page validation
     var errorMsg,lastName;//establishes variables of errorMsg and lastName
-    errorMsg= document.getElementById("out");//sets errorMsg to whatever is in the out id section
+    errorMsg= document.getElementById("error");//sets errorMsg to whatever is in the out id section
     errorMsg.innerHTML="";//sets the html in this section to nothing
     lastName=document.getElementById("lastName").value;//sets the value of lastName based on user input
 
@@ -64,7 +64,7 @@ function contact(){//starts the function for the contact page validation
     catch(errMsg){//catches the error 
         console.log(errMsg); //console logs the error
         formHasErrors=true;//sets teh formHasErrors variable to true
-        document.getElementById("out").innerHTML = errMsg; // puts the errMsg into the Html for user to see
+        document.getElementById("error").innerHTML = errMsg; // puts the errMsg into the Html for user to see
     }
     finally{
         if (formHasErrors){
