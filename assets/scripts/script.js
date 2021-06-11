@@ -1,8 +1,13 @@
 function bothCals() {   //start of bothCals function.
-    var gender = find("gender").value;//this establishes the variable "gender" and where to get it from
-    if (gender = "female") {    //this states that if the user has selected female for gender that it should do this action
+    var gender = document.getElementsByName("gender");//this establishes the variable "gender" and where to get it from          
+    for(i = 0; i < gender.length; i++) {
+        if(gender[i].checked)
+        document.getElementById("result").innerHTML
+                = "Gender: "+gender[i].value;
+    }
+    if (gender[1].checked) {    //this states that if the user has selected female for gender that it should do this action
         caloriesFemale();        //calls on the caloriesFemale function to execute
-    } else if (gender = "male") {        //states  that is the user chooses male as the gender to execute the following
+    } else if (gender[0].checked) {        //states  that is the user chooses male as the gender to execute the following
         caloriesMale();     //calls on the caloriesMale function 
     }
 }
