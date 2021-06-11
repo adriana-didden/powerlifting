@@ -3,7 +3,7 @@ function bothCals() {   //start of bothCals function.
     for(i = 0; i < gender.length; i++) {
         if(gender[i].checked)
         document.getElementById("result").innerHTML
-                = "Gender: "+gender[i].value;
+                = "Check out the site for more info"
     }
     if (gender[1].checked) {    //this states that if the user has selected female for gender that it should do this action
         caloriesFemale();        //calls on the caloriesFemale function to execute
@@ -26,7 +26,7 @@ function moreInfo(){
     document.getElementById('proteinQuestion').innerHTML="Protein (g)=Weight lbs * .6(bare minimum) - 1(max)<br />";    //will add the statement to the section of html where the protein id is located
     }
     else if(info=="no"){    //states that is info is equal to no, it'll run the next line
-    document.getElementById('proteinQuestion').innerHTML="No Problem! Check out our page for any other information you might need! <br />";    //will add the statement to the section of html where the protein id is located
+    document.getElementById('proteinQuestion').innerHTML="No Problem!  <br />";    //will add the statement to the section of html where the protein id is located
     }
     else{ //this code handles situations where the user didn't answer
         alert("Error: please select yes or no"); //pops up an alert telling the uesr to select one or  the other 
