@@ -80,39 +80,39 @@ function submitThanks(){//start of submitThanks function
 
 
 //CASE 5 code Below this line ---------------------------------------------
-var data=document.getElementById("web");
-function newWeb(){
-    var availHeight = document.createElement("li");
-   availHeight.innerText = "availHeight: " + screen.availHeight + "px";
-    data.appendChild(availHeight);
+var data=document.getElementById("web"); //creates variable for data 
+function newWeb(){ //start of newWeb function
+    var availHeight = document.createElement("li"); //creates variable for availHeight and then creates a list element within it.
+   availHeight.innerText = "availHeight: " + screen.availHeight + "px"; //adds text to the above variable, getting the number using screen
+    data.appendChild(availHeight); //adds the variable into the the data variable
 
-    var availWidth = document.createElement("li");
-    availWidth.innerText = "availWidth: " + screen.availWidth + "px";
-    data.appendChild(availWidth);
+    var availWidth = document.createElement("li");//creates variable for availWidth and then creates a list element within it.
+    availWidth.innerText = "availWidth: " + screen.availWidth + "px"; //adds text to the above variable, getting the number using screen
+    data.appendChild(availWidth); //adds the variable into the the data variable
 
-    var colorDepth = document.createElement("li");
-    colorDepth.innerText = "colorDepth: " + screen.colorDepth + "px";
-    data.appendChild(colorDepth);
+    var colorDepth = document.createElement("li");//creates variable for colorDepth and then creates a list element within it.
+    colorDepth.innerText = "colorDepth: " + screen.colorDepth + "px"; //adds text to the above variable, getting the number using screen
+    data.appendChild(colorDepth);//adds the variable into the the data variable
 
-    var height = document.createElement("li");
-    height.innerText = "height: " + screen.height + "px";
-    data.appendChild(height);
+    var height = document.createElement("li");//creates variable for height and then creates a list element within it.
+    height.innerText = "height: " + screen.height + "px"; //adds text to the above variable, getting the number using screen
+    data.appendChild(height);//adds the variable into the the data variable
 
-    var geolocation = document.createElement("li");
-    geolocation.innerText = "geolocation: " + navigator.geolocation;
-    data.appendChild(geolocation);
+    var geolocation = document.createElement("li");//creates variable for geolocation and then creates a list element within it.
+    geolocation.innerText = "geolocation: " + navigator.geolocation; //adds text to the above variable, getting the number using navigator
+    data.appendChild(geolocation); //adds the variable into the the data variable
 
-    var platform = document.createElement("li");
-    platform.innerText = "platform: " + navigator.platform;
-    data.appendChild(platform);
+    var platform = document.createElement("li");//creates variable for platform and then creates a list element within it.
+    platform.innerText = "platform: " + navigator.platform; //adds text to the above variable, getting the number using navigator
+    data.appendChild(platform); //adds the variable into the the data variable
 
-    var appName = document.createElement("li");
-    appName.innerText = "appName: " + navigator.appName;
-    data.appendChild(appName);
+    var appName = document.createElement("li");//creates variable for appName and then creates a list element within it.
+    appName.innerText = "appName: " + navigator.appName; //adds text to the above variable, getting the number using navigator
+    data.appendChild(appName); //adds the variable into the the data variable
 
-    var userAgent = document.createElement("li");
-    userAgent.innerText = "userAgent: " + navigator.userAgent;
-    data.appendChild(userAgent);
+    var userAgent = document.createElement("li");//creates variable for userAgent and then creates a list element within it.
+    userAgent.innerText = "userAgent: " + navigator.userAgent; //adds text to the above variable, getting the number using navigator
+    data.appendChild(userAgent); //adds the variable into the the data variable
 }
 
-newWeb();
+newWeb(); // calls the newWeb function
