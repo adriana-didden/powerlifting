@@ -1,9 +1,8 @@
 function bothCals() {   //start of bothCals function.
     var gender = document.getElementsByName("gender");//this establishes the variable "gender" and where to get it from          
-    for(i = 0; i < gender.length; i++) {
+    for(i = 0; i < gender.length; i++) { //will run through this code until it goes through all options. 
         if(gender[i].checked)
-        document.getElementById("result").innerHTML
-                = "Check out the site for more info"
+        document.getElementById("result").innerHTML  = "Check out the site for more info"; //gets the result id and puts this text into the html
     }
     if (gender[1].checked) {    //this states that if the user has selected female for gender that it should do this action
         caloriesFemale();        //calls on the caloriesFemale function to execute
@@ -48,9 +47,6 @@ function weightcalc() {//start of the weightcalc function, this will get the use
     console.log(weight);    //runs the weight value in the console    
 }
 
-
-//CASE 4 code below this line--------------------------------
-
 function contact(){//starts the function for the contact page validation
     var errorMsg,lastName;//establishes variables of errorMsg and lastName
     errorMsg= document.getElementById("error");//sets errorMsg to whatever is in the out id section
@@ -81,3 +77,42 @@ function submitThanks(){//start of submitThanks function
     window.location.href = "thanks.html"; // sends user to the thanks page
 
 }
+
+
+//CASE 5 code Below this line ---------------------------------------------
+var data=document.getElementById("web");
+function newWeb(){
+    var availHeight = document.createElement("li");
+   availHeight.innerText = "availHeight: " + screen.availHeight + "px";
+    data.appendChild(availHeight);
+
+    var availWidth = document.createElement("li");
+    availWidth.innerText = "availWidth: " + screen.availWidth + "px";
+    data.appendChild(availWidth);
+
+    var colorDepth = document.createElement("li");
+    colorDepth.innerText = "colorDepth: " + screen.colorDepth + "px";
+    data.appendChild(colorDepth);
+
+    var height = document.createElement("li");
+    height.innerText = "height: " + screen.height + "px";
+    data.appendChild(height);
+
+    var geolocation = document.createElement("li");
+    geolocation.innerText = "geolocation: " + navigator.geolocation;
+    data.appendChild(geolocation);
+
+    var platform = document.createElement("li");
+    platform.innerText = "platform: " + navigator.platform;
+    data.appendChild(platform);
+
+    var appName = document.createElement("li");
+    appName.innerText = "appName: " + navigator.appName;
+    data.appendChild(appName);
+
+    var userAgent = document.createElement("li");
+    userAgent.innerText = "userAgent: " + navigator.userAgent;
+    data.appendChild(userAgent);
+}
+
+newWeb();
