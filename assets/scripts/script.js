@@ -62,10 +62,10 @@ function contact(){//starts the function for the contact page validation
             submitThanks();//calls the submitThanks function.
         }
     }
-    catch(errMsg){//catches the error 
-        console.log(errMsg); //console logs the error
+    catch(errorMsg){//catches the error 
+        console.log(errorMsg); //console logs the error
         formHasErrors=true;//sets teh formHasErrors variable to true
-        document.getElementById("error").innerHTML = errMsg; // puts the errMsg into the Html for user to see
+        document.getElementById("error").innerHTML = errorMsg; // puts the errMsg into the Html for user to see
     }
     finally{
         if (formHasErrors){
@@ -79,7 +79,6 @@ function submitThanks(){//start of submitThanks function
 }
 
 
-//CASE 5 code Below this line ---------------------------------------------
 var data=document.getElementById("web"); //creates variable for data 
 function newWeb(){ //start of newWeb function
     var availHeight = document.createElement("li"); //creates variable for availHeight and then creates a list element within it.
@@ -116,3 +115,4 @@ function newWeb(){ //start of newWeb function
 }
 
 newWeb(); // calls the newWeb function
+

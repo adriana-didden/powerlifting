@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <!--
-            GIT417/418: Case Project 5
+            GIT417/418: Case Project 6
             Author: Adriana Didden
-            Date:June 13,2021
+            Date:June 18,2021
+
+            code on this page
         -->
         <meta charset="UTF-8" />
         <title>Powerlifting | Home</title>
@@ -61,18 +63,34 @@
             <section>
                 <h3>Nutrition Help</h3>
                 <form action="mailto:adrianadidden@gmail.com" enctype="text/plain">
-                    <fieldset>
+                    <fieldset> <!--case6 required field added below-->
                         <legend>Info</legend>
                         <label for="firstName">First Name:</label><br>
-                        <input type="text" id="firstName" value="" /><br>
+                        <input type="text" id="firstName" value="" required /><br>
                         <label for="lastName">Last Name:</label><br>
-                        <input type="text" id="lastName" value="" /><br>
+                        <input type="text" id="lastName" value="" required/><br>
                         <label for="email"> Email:</label><br>
-                        <input type="email" id="email" value="" /><br>
+                        <input type="email" id="email" value="" required/><br>
+                        <label for="phone"> Phone #:</label><br>
+                        <input type="phone" id="phone" value="" required/><br>
                         <label for="message"> Message:</label><br>
-                        <input type="text" id="message" value="" /><br>
-                       
-                        <input type="button" value="Submit" onclick="contact()"><!--onclick will trigger the mentioned function in JS-->
+                        <input type="text" id="message" value="" required/><br>
+
+                        <legend>Subject:</legend>
+                        <label for="type1"> Program</label><br>
+                        <input type="checkbox" id="type1" name="type" value="Program" /><br>
+                        <label for="type2"> Stretching</label><br>
+                        <input type="checkbox" id="type2" name="type" value="Stretching" /><br>
+                        <label for="type3"> General Questions</label><br>
+                        <input type="checkbox" id="type3" name="type" value="question" /><br>
+                          
+                        <legend>Preferred Contact Method:</legend>
+                        <label for="contactMethod1"> Phone</label><br>
+                        <input type="radio" id="contactMethod1" name="method" value="Program" /><br>
+                        <label for="contactMethod2"> Email</label><br>
+                        <input type="radio" id="contactMethod2" name="method" value="Stretching" /><br>
+                        <p id="error"></p>
+                        <input type="submit" value="Submit"><!--onclick will trigger the mentioned function in JS-->
                     </fieldset>
                     <p id="error"></p>
                 </form>
